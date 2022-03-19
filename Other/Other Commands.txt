@@ -1,0 +1,5 @@
+#AppId
+Get-WmiObject Win32_ClassicCOMClassSetting -Filter "AppID='{9CA88EE3-ACB7-47C8-AFC4-AB702511C276}'"
+
+#classID
+Get-WmiObject Win32_ClassicCOMClassSetting -Filter "ComponentId='{91493441-5A91-11CF-8700-00AA0060263B}'"

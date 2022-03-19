@@ -1,0 +1,2 @@
+Get-ChildItem -Path '\\corenetappnas\Tarasol_Data$\TarasolData\NVSSoft\Temp\Tarasol\' -Recurse | `
+Where-Object {($_.LastWriteTime -lt (Get-Date).AddDays(-1))} | Remove-Item -Recurse -Verbose
