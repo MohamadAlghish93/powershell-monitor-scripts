@@ -1,36 +1,37 @@
 Function GetStatus ($ServiceName,$URL,$server){
 
-$Status = wget $URL | % {$_.StatusCode}
+   $Status = wget $URL | % {$_.StatusCode}
 
-if (($Status -eq "200" ) -or ($Status -eq "204")){
+   if (($Status -eq "200" ) -or ($Status -eq "204")){
 
-Write-Host "$server  " -ForegroundColor yellow 
-Write-Host "$ServiceName   ($URL) --> Status : " -NoNewLine
-Write-Host "($Status)" -ForegroundColor Green  
-Write-Host " "
-Write-Host " "
-}
+   Write-Host "$server  " -ForegroundColor yellow 
+   Write-Host "$ServiceName   ($URL) --> Status : " -NoNewLine
+   Write-Host "($Status)" -ForegroundColor Green  
+   Write-Host " "
+   Write-Host " "
+   }
 
 
-else{
-Write-Host "$server" -ForegroundColor yellow 
-Write-Host "$ServiceName   ($URL) --> Status :" -NoNewLine
-Write-Host "($Status)" -ForegroundColor Red  
-Write-Host " "
-Write-Host " "
-}
+   else{
+   Write-Host "$server" -ForegroundColor yellow 
+   Write-Host "$ServiceName   ($URL) --> Status :" -NoNewLine
+   Write-Host "($Status)" -ForegroundColor Red  
+   Write-Host " "
+   Write-Host " "
+   }
 
 }
 #Tarasol Servers
 Write-Host "-----------------------Tarasol Servers------------------------------"
 Write-Host " "
 "10.51.61.65","10.51.61.66","10.51.61.135","10.51.61.136" | ForEach-Object -Process {
-GetStatus  "$_"  "http://$_/tarasolsite/login" TarasolSite
-GetStatus  "$_"  "http://$_/tarasolAPI4" TarasolAPI4
-GetStatus  "$_" "http://$_/AMImaging/" AMImaging
-GetStatus  "$_" "http://$_/NVSOTPService/" NVSOTPService
-GetStatus  "$_" "http://$_/Tarasol4WebDav/" Tarasol4WebDav
-GetStatus  "$_" "http://$_/IntegrationCore/" IntegrationCore
+   
+   GetStatus  "$_"  "http://$_/tarasolsite/login" TarasolSite
+   GetStatus  "$_"  "http://$_/tarasolAPI4" TarasolAPI4
+   GetStatus  "$_" "http://$_/AMImaging/" AMImaging
+   GetStatus  "$_" "http://$_/NVSOTPService/" NVSOTPService
+   GetStatus  "$_" "http://$_/Tarasol4WebDav/" Tarasol4WebDav
+   GetStatus  "$_" "http://$_/IntegrationCore/" IntegrationCore
 
 }
 

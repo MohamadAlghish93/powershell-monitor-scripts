@@ -1,0 +1,1 @@
+ Get-ChildItem -Path W:\ -Filter 123123.* -Recurse -ErrorAction SilentlyContinue -Force

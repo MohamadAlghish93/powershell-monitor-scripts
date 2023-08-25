@@ -1,7 +1,7 @@
 Write-Host "----------  Tarasol Backup  -------------------" -ForegroundColor yellow
 
 $Current_Date = (get-date -f yyyyMMddhhmm)
-$Destination_Backup = "C:\Backup\Tarasol_$Current_Date"
+$Destination_Backup = "C:\Backup_NVS\Tarasol_$Current_Date"
 
 Import-Csv "backup.csv" | foreach{ 
 	
