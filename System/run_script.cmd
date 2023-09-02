@@ -1,0 +1,1 @@
+powerShell -windowstyle hidden C:\Users\nvss2\Desktop\script\kill_process_startup.ps1  >> C:\Users\nvss2\Desktop\script\kill_process_startup.log
