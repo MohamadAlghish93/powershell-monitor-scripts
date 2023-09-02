@@ -1,5 +1,11 @@
 # powershell-monitor-scripts
 
+## Helper Command
+
+For allow running script in PC
+
+> Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+
 ## Most used
 
 - [Backup Directory](./Files/TarasolBackup.ps1)
