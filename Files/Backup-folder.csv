@@ -1,0 +1,10 @@
+Name,App
+C:\inetpub\wwwroot\AMImaging\Logs,AMImaging
+C:\inetpub\wwwroot\eziflow\Logs,eziflow
+C:\inetpub\wwwroot\eziflowwebservice\Logs,eziflowwebservice
+C:\inetpub\wwwroot\TarasolAPI\aspforms\Correspondence\TarasolSetting\Logs,TarasolAPI
+C:\inetpub\wwwroot\TarasolSite\aspforms\Correspondence\TarasolSetting\Logs,TarasolSite
+C:\inetpub\wwwroot\eziflow,eziflow_site
+C:\inetpub\wwwroot\eziflowwebservice,eziflow_api
+C:\inetpub\wwwroot\TarasolAPI,Tarasol_api
+C:\inetpub\wwwroot\TarasolSite,Tarasol_site
