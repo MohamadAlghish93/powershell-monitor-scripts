@@ -1,0 +1,10 @@
+{
+    "ReportCreator":"NVSSoft",
+	"ReportPosition":"IT",
+	"LogoImageUrl":"./logo.png",
+	"Version":"1.0.0",
+	"Database": {
+		"Server": "172.0.0.1",
+		"Port": "1433"
+	}
+}
